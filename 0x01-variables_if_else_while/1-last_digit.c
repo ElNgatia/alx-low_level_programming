@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
-/*
- * Main - Program prints the last number of n
+/**
+ * main - Program prints the last number of n
  * Return: 0 (Success)
  */
 int main(void)
