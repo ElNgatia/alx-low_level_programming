@@ -10,10 +10,10 @@ int main(void)
 	for (num = 0; num <= 15; num++)
 		if (num < 10)
 		{
-			putchar("%d", num);
+			putchar('0' + num);
 		}
 		else
 		{
-			putchar("%c", 'A' + num - 10);
+			putchar('A' + num - 10);
 		}
 }
