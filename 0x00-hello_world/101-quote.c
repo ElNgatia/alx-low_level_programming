@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - C program that prints without printf and puts
- * Return: 0(Success)
+ * Return: 1(Success)
  */
 
 int main(void)
@@ -11,5 +11,5 @@ int main(void)
 
 	write(STDERR_FILENO, msg, strlen(msg));
 
-	return (0);
+	return (1);
 }
