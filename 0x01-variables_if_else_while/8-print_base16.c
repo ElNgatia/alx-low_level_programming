@@ -8,6 +8,7 @@ int main(void)
 	int num;
 
 	for (num = 0; num <= 15; num++)
+	{
 		if (num < 10)
 		{
 			putchar('0' + num);
@@ -16,5 +17,7 @@ int main(void)
 		{
 			putchar('A' + num - 10);
 		}
+	}
+	putchar('\n');
 	return (0);
 }
