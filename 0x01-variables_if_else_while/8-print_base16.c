@@ -16,4 +16,5 @@ int main(void)
 		{
 			putchar('A' + num - 10);
 		}
+	return (0);
 }
