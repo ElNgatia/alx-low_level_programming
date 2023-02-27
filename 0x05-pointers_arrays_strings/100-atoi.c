@@ -6,19 +6,22 @@
  */
 int _atoi(char *s)
 {
-	int result = 0;
-	int sign = 1;
+	int sign = 1, i, num = 0;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s == '-')
+		if (s[i] == '-')
+		{
 			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			result = result * 10 + (*s - '0');
-		else if (result > 0)
-			break;
-
-		s++;
+		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			num = num * 10 + sign * (s[i] - '0');
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+			{
+				break;
+			}
+		}
 	}
-	return (result * sign);
+	return (num);
 }
