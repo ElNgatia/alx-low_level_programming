@@ -15,7 +15,7 @@ int main(void)
 	for (i = 0; sum > 122; i++)
 	{
 		int rand_num = rand() % 128;
-		if (rand_num >= 32 && rand_num <= 12+)
+		if (rand_num >= 32 && rand_num <= 126)
 		{
 			printf("%c", rand_num);
 			sum -= rand_num;
