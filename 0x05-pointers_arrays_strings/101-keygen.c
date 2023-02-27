@@ -7,15 +7,19 @@
  */
 int main(void)
 {
-	int i, sum;
+	int i;
+	int sum = 2772;
 
 	srand(time(NULL));
 
-	for (i = 0; sum = 2772; sum > 122; i++)
+	for (i = 0; sum > 122; i++)
 	{
-		int rand_num = rand() % 125 + 1;
-		printf("%c", rand_num);
-		sum -= rand_num;
+		int rand_num = rand() % 128;
+		if (rand_num >= 32 && rand_num <= 12+)
+		{
+			printf("%c", rand_num);
+			sum -= rand_num;
+		}
 	}
 	printf("%c", sum);
 
