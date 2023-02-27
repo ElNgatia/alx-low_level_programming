@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int i, sum, rand_num;
+	int i, sum;
 
 	srand(time(NULL));
 
 	for (i = 0; sum = 2772; sum > 122; i++)
 	{
-		rand_num = (rand() % 125) + 1;
+		int rand_num = rand() % 125 + 1;
 		printf("%c", rand_num);
 		sum -= rand_num;
 	}
