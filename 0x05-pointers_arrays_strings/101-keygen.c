@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; sum = 2772; sum > 122; i++)
 	{
 		rand_num = (rand() % 125) + 1;
-		printd("%c", rand_num);
+		printf("%c", rand_num);
 		sum -= rand_num;
 	}
 	printf("%c", sum);
