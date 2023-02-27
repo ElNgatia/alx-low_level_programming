@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - prints every other character
  * @str: String to be printed
@@ -10,7 +11,7 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 		i += 2;
 	}
 
