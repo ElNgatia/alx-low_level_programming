@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_rev - Prints a string in reverse to stdout.
- *
  * @s: A pointer to the string to be printed in reverse.
+ * Return: 0
  */
 void print_rev(char *s)
 {
@@ -15,9 +15,9 @@ void print_rev(char *s)
 	}
 	while (i >= 0)
 	{
-		putchar(*(s + i));
+		_putchar(*(s + i));
 		i--;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
