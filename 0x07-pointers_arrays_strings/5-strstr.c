@@ -8,15 +8,21 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	size_t needle_len = strlen(needle);
+	char *p1, *p2, *p3;
 
-	while (*haystack != '\0')
+	for (p1 = haystack; *p1 != '\0'; p1++)
 	{
-		if (strncmp(haystack, needle, needle_len) == 0)
+		p2 = p1;
+		p3 = needle;
+		while (*p3 != '\0' && *p2 == *p3)
 		{
-			return (haystack);
+			p2++;
+			p3++;
 		}
-		haystack++;
+		if (*p3 == '\0')
+		{
+			return (p1);
+		}
 	}
 	return (NULL);
 }
