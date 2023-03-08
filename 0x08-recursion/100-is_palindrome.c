@@ -34,9 +34,9 @@ int _strlen_rec(char *s)
  */
 int check(char *s, int i, int len)
 {
-	if (*(s + 1) != *(s + len - 1))
+	if (*(s + 1) != *(s + len - 1 - i))
 		return (0);
-	if (i >= len)
+	if (i >= len / 2)
 		return (1);
 	return (check(s, i + 1, len - 1));
 }
