@@ -1,13 +1,18 @@
 #include <stdio.h>
+#include <stlib.h>
 /**
  * main - multiplies two numbers
  * @argc: argument
  * @argv: argument as well
+ * @i: integer
+ * @j: integer
  * Return: 0
  */
 int main(int argc, char **argv)
 {
-	int i, j, mul;
+	int i;
+	int j;
+	int mul;
 
 	if (argc < 3)
 	{
