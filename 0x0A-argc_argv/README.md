@@ -1,1 +1,1 @@
-This is my repository for arguments
+How to argue
