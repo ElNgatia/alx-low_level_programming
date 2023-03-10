@@ -12,7 +12,6 @@ int main(int argc, char **argv)
 {
 	int i;
 	int j;
-	int mul;
 
 	if (argc < 3)
 	{
@@ -22,8 +21,7 @@ int main(int argc, char **argv)
 
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
-	mul = i * j;
 
-	printf("%d\n", mul);
+	printf("%d\n", i * j);
 	return (0);
 }
