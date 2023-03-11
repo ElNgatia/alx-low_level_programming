@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
+
 /**
- * main - multiplies two numbers
- * @argc: argument
- * @argv: argument as well
- * @i: integer
- * @j: integer
+ * main - entry point
+ * Description: multiply 2 nums and give result
+ * @argc: arguement count
+ * @argv: arguement array
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
+	int num1;
+	int num2;
+	int result;
 
 	if (argc != 3)
 	{
@@ -19,9 +21,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
-
-	printf("%d\n", i * j);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+	printf("%d\n", result);
 	return (0);
 }
